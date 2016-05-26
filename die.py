@@ -8,3 +8,5 @@ class Die(object):
   def roll(self):
     return random.randrange(0, self.side_count) + 1
 
+# d = Die()
+# print d.roll()
