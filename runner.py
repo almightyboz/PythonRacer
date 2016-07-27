@@ -11,3 +11,5 @@ print die.roll()
 print game.positions
 # print game.board_visualization()
 # equv of sleep(1)
+print "yo"
+game.finished_game()

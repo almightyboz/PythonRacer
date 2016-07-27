@@ -6,7 +6,7 @@ class PythonRacer(object):
     self.players = players
     self.die = die
     self.length = length
-    self.positions = create_positions(self.players)
+    self.positions = self.create_positions(self.players)
 
   def create_positions(self, players):
     position_dict = {}
@@ -14,7 +14,16 @@ class PythonRacer(object):
       position_dict[player] = 0
     return position_dict
 
-  # def does_work(self):
-  #   print "yes it does"
-  # def finished_game(self):
+  def finished_game(self):
+    print "yooooo"
+    for player, position in self.positions.items():
+      print position >= self.length
 
+
+
+
+  # def advance_player(self, player):
+
+  # def winner(self):
+
+  # def board_visualization(self):
